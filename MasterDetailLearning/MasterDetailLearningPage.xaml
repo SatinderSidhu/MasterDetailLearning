@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:MasterDetailLearning" 
+		x:Class="MasterDetailLearning.MasterDetailLearningPage"
+		Title="I am the master"
+		MasterBehavior="Popover"
+		>
+	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center"  />
+	<MasterDetailPage.Master >
+		
+		<ContentPage Padding="10" BackgroundColor="Gray" Title="Master" Icon="hamburger.png">
+			<ContentPage.Content>
+				<StackLayout Margin="5,30,5,5">
+					<Label Text="Master Page">
+					</Label>
+
+					<Button x:Name="b1" Text="Menu Item 1" BackgroundColor="Yellow" Clicked="Handle_Clicked"></Button>
+
+					<Button x:Name="b2" Text="Menu Item 2" BackgroundColor="Yellow" Clicked="Handle_Clicked2"></Button>
+
+					<Button x:Name="b3" Text="Menu Item 3" Clicked="Handle_Clicked3"></Button>
+
+					<Button x:Name="b4" Text="Menu Item 4" Clicked="Handle_Clicked4"></Button>
+				</StackLayout>
+			</ContentPage.Content>
+		</ContentPage>
+	</MasterDetailPage.Master>
+	
+	<MasterDetailPage.Detail>
+
+		<ContentPage Padding="10">
+			<ContentPage.Content>
+				<StackLayout Margin="5,30,5,5">
+					<Label Text="Detail  Page">
+					</Label>
+				</StackLayout>
+			</ContentPage.Content>
+		</ContentPage>
+	</MasterDetailPage.Detail>
+</MasterDetailPage>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="MasterDetailLearning.Page1"
+		Title="Page 1"
+		x:Name="Page1"
+		>
+	<ContentPage.Content >
+		<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+		<Label Text="I am page 1. I am the welcome page. you can put welcome message here"></Label></StackLayout>
+	</ContentPage.Content>
+</ContentPage>
